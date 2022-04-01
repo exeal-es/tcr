@@ -34,7 +34,10 @@ namespace tcr
     {
         public static int GetValueBy(int position)
         {
-            if (position > 1) return 1;
+            if (position > 1)
+            {
+                return 1;
+            }
             return position;
         }
     }
