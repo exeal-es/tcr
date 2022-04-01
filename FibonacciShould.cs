@@ -61,6 +61,15 @@ namespace tcr
             
             Assert.Equal(8, result);
         }
+        
+        [Fact]
+        public void return_21_for_position_8()
+        {
+            var result = Fibonacci.GetValueBy(8);
+            
+            Assert.Equal(21, result);
+        }
+
     }
 
     public class Fibonacci
