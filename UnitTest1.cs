@@ -8,7 +8,7 @@ namespace tcr
         [Fact]
         public void Test1()
         {
-            var result = Fibonacci.Fib(0);
+            var result = Fibonacci.GetValueBy(0);
             
             Assert.Equal(0, result);
         }
@@ -16,7 +16,7 @@ namespace tcr
 
     public class Fibonacci
     {
-        public static int Fib(int position)
+        public static int GetValueBy(int position)
         {
             return 0;
         }
