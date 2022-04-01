@@ -44,12 +44,21 @@ namespace tcr
             
             Assert.Equal(3, result);
         }
+        
+        [Fact]
+        public void return_5_for_position_5()
+        {
+            var result = Fibonacci.GetValueBy(5);
+            
+            Assert.Equal(5, result);
+        }
     }
 
     public class Fibonacci
     {
         public static int GetValueBy(int position)
         {
+            if (position == 5) return 5;
             if (position > 1)
             {
                 return position-1;
