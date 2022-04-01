@@ -3,10 +3,10 @@ using Xunit;
 
 namespace tcr
 {
-    public class UnitTest1
+    public class FibonacciShould
     {
         [Fact]
-        public void Test1()
+        public void return_0_for_position_0()
         {
             var result = Fibonacci.GetValueBy(0);
             
@@ -14,7 +14,7 @@ namespace tcr
         }
 
         [Fact]
-        public void Test2()
+        public void return_1_for_position_1()
         {
             var result = Fibonacci.GetValueBy(1);
             
