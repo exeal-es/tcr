@@ -28,6 +28,14 @@ namespace tcr
             
             Assert.Equal(1, result);
         }
+        
+        [Fact]
+        public void return_1_for_position_3()
+        {
+            var result = Fibonacci.GetValueBy(3);
+            
+            Assert.Equal(2, result);
+        }
     }
 
     public class Fibonacci
@@ -36,7 +44,7 @@ namespace tcr
         {
             if (position > 1)
             {
-                return 1;
+                return position-1;
             }
             return position;
         }
