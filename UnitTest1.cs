@@ -16,7 +16,7 @@ namespace tcr
 
     public class Fibonacci
     {
-        public static int Fib(int i)
+        public static int Fib(int position)
         {
             return 0;
         }
