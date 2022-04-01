@@ -58,8 +58,7 @@ namespace tcr
     {
         public static int GetValueBy(int position)
         {
-            if (position == 5) return 5;
-            if (position > 1)
+            if (position > 1 && position != 5)
             {
                 return position-1;
             }
