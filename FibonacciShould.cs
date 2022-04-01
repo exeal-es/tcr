@@ -30,7 +30,7 @@ namespace tcr
         }
         
         [Fact]
-        public void return_1_for_position_3()
+        public void return_2_for_position_3()
         {
             var result = Fibonacci.GetValueBy(3);
             
