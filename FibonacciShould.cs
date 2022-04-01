@@ -78,10 +78,7 @@ namespace tcr
         {
             if (position > 1)
             {
-                var foo = GetValueBy(position - 1);
-                var foo2 = GetValueBy(position - 2);
-                return foo + foo2;
-                
+                return GetValueBy(position - 1) + GetValueBy(position - 2);
             }
             return position;
         }
