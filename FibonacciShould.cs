@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 using Xunit;
 
 namespace tcr
@@ -66,11 +67,13 @@ namespace tcr
     {
         public static int GetValueBy(int position)
         {
-            if (position == 6) return 8;
-            if (position == 5) return 5;
-            if (position == 4) return 3;
-            if (position == 3) return 2;
-            if (position == 2) return 1;
+            if (position > 1)
+            {
+                var foo = GetValueBy(position - 1);
+                var foo2 = GetValueBy(position - 2);
+                return foo + foo2;
+                
+            }
             return position;
         }
     }
